@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///Users/jackhickey/Desktop/coding%20files/website2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>My website</title>
+<link href="./My website_files/style.css" type="text/css" rel="stylesheet" <="" head="">
+
+
+</head><body>
+	<div id="main">
+
+
+<button class="tablink" onclick="openPage(&#39;Home&#39;, this, &#39;red&#39;)" id="defaultOpen" style="background-color: red;">Home</button>
+<button class="tablink" onclick="openPage(&#39;News&#39;, this, &#39;green&#39;)" style="">News</button>
+<button class="tablink" onclick="openPage(&#39;Contact&#39;, this, &#39;blue&#39;)" style="">Contact</button>
+<button class="tablink" onclick="openPage(&#39;About&#39;, this, &#39;orange&#39;)" style="">About</button>
+
+<div id="Home" class="tabcontent" style="display: block;">
+  <img src="./My website_files/logo2" width="250" height="200">
+
+	<h1>Soul Food Grazing</h1>
+
+
+	<p>Interested in some <b>DAIRY GOODNESS</b> in your life over the winter period?
+	Say no more, Soul Food Grazing has you sorted. </p>
+	<p>Now taking orders for local deliveries in the Kildare/Laois area.</p>
+
+	<h3>Just gonna' leave these here to make you jealous...</h3>
+
+<div class="row">
+	<div class="column">
+		<img src="./My website_files/grazing_box1.JPG" width="300" height="330">
+	</div>
+	<div class="column">
+		<img src="./My website_files/grazing_box2.JPG" width="300" height="330">
+	</div>
+
+
+</div>
+
+</div>
+
+<div id="News" class="tabcontent" style="display: none;">
+  <img src="./My website_files/logo2" width="250" height="200">
+  <h2>News</h2>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="Contact" class="tabcontent" style="display: none;">
+  <img src="./My website_files/logo2" width="250" height="200">
+  <h2>Contact</h2>
+  <p>Get in touch to fill all your cheese desires.</p>
+  <p>You can Call/Text Cliona or Josh anytime on 0851458475 or 0858453712 or fill out the form below and we'll get back to you</p>
+  
+
+<h3>Billing Address</h3>
+            
+ 	<div class="row">
+              <div class="col-50">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="John J. Johnson">
+              </div>
+              <div class="col-50">
+                <label for="Phone Number">Contact Number</label>
+                <input type="text" id="Phone Number" name="Phone Number" placeholder="0851234567">
+              </div>
+            </div>
+          
+
+          
+          <div class="col-50">
+
+</div>
+<div class="row">
+
+<label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="eg. 123 Main Street, Abbeyliex">
+            <label for="Type and no. of grazing box(es)"><i class="fa fa-institution"></i> Type and Amount Required</label>
+            <input type="text" id="type" name="type" placeholder="eg. 1 meat and 2 vegetarian">
+	    <label for="Dietary"><i class="fa fa-institution"></i> Any Dietary requirements?</label>
+            <input type="text" id="type" name="type" placeholder="e.g Allergic to nuts,fish etc">
+
+ </div>
+        <input type="submit" value="Submit details" class="btn">
+      </form>
+    </div>
+  </div>
+            
+
+
+<div id="About" class="tabcontent" style="display: none;">
+  <img src="./My website_files/logo2" width="250" height="200">
+  <h2>About</h2>
+  <p>Who we are and what we do.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+</div></body></html>
